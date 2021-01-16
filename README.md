@@ -271,7 +271,8 @@ all_filtered_df_in = exp_cast_ds.read().to_pandas()
 
 assert all_filtered_df_in.shape[0] == all_filtered_df_in_lower.shape[0] + all_filtered_df_in_upper.shape[0]
 ```
-
+"filters_objects" can be seen as original "filters" in PyArrow, "filters_types" is the cast type that can 
+retrieve from type_aliases in PyArrow.
 <p>
 <a href="expression_toolkit_cast.py">Code with Demo</a>
 </p>
