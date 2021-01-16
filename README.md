@@ -111,7 +111,9 @@ it use field (Expression) to have a formal representation.
 Expression have cast as its method, so a strightforword infer of the support function is that, One can have 
 a comparison between a field and a object by cast the field into the type of object.
 For Example, we can compare with pandas datatime :
+```PY
                 ("time_two_pos", ">", pd.to_datetime("1970-01-01 00:24:01.200000001"))
+```
 by cast "time_two_pos" field into timestamp, when use time_two_pos as partition key.
 But it seems not work in the 2.0.0 version.
 
